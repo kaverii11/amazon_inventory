@@ -2,7 +2,7 @@
 
 # Amazon Inventory Reconciliation Using AI
 
-**Project by: Kaveri Sharma (PES1UG23CS293) & Kashish Mittal (PES1UG23CS290)**
+**Project by: Kaveri Sharma (PES1UG23CS293)**
 *ML Mini Project - October 2025*
 
 ---
@@ -13,7 +13,7 @@ This project is a replication of the Stanford research paper, "Amazon Inventory 
 
 ## 2. Dataset
 
-This project uses the publicly available [Amazon Bin Image Dataset](https://registry.opendata.aws/amazon-bin-imagery/). Due to computational constraints, we worked with a filtered subset of 333 images containing 0 to 5 items. The complete data pipeline was managed using Google Cloud Storage (GCS) for efficient access.
+This project uses the publicly available [Amazon Bin Image Dataset](https://registry.opendata.aws/amazon-bin-imagery/). Due to computational constraints, I worked with a filtered subset of 333 images containing 0 to 5 items. The complete data pipeline was managed using Google Cloud Storage (GCS) for efficient access.
 
 ## 3. Project Structure
 
@@ -28,7 +28,7 @@ To run this project, you will need a Google Colab environment with GPU accelerat
 
 **Prerequisites:**
 * A Google Account with access to Google Colab.
-* The project dataset hosted in a Google Cloud Storage (GCS) bucket. Our bucket is named `kaveri-amazon-bin-dataset-unique`. The file paths in the notebooks are configured for this bucket.
+* The project dataset hosted in a Google Cloud Storage (GCS) bucket. The bucket is named `kaveri-amazon-bin-dataset-unique`. The file paths in the notebooks are configured for this bucket.
 
 **Steps:**
 
@@ -69,9 +69,9 @@ The training progress, including epoch-by-epoch loss and validation accuracy, wi
 
 ## 6. Results Summary
 
-Our findings successfully validated the core hypothesis of the research paper:
+The findings successfully validated the core hypothesis of the research paper:
 
 * **SVMs performed poorly**, with the best model (Raw Pixels + PCA) achieving only **20%** validation accuracy.
-* **CNNs were clearly superior**, with our best model (ResNet34 + Adam) reaching **35%** validation accuracy, a **75% relative improvement** over the best SVM.
+* **CNNs were clearly superior**, with the best model (ResNet34 + Adam) reaching **35%** validation accuracy, a **75% relative improvement** over the best SVM.
 
 The primary limitation was the small dataset size (333 images), which prevented the models from achieving higher absolute accuracy.
