@@ -1,0 +1,25 @@
+# environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# datasets (never commit) - ABID, SKU-110K, anything from GCS
+data/
+*.tar.gz
+*.zip
+
+# model weights / exports / training runs
+*.pt
+*.pth
+*.onnx
+*.ckpt
+runs/
+weights/
+*.npy
+*.npz
+
+# misc
+.DS_Store
+*.log
+.env
